@@ -65,4 +65,18 @@
         app:layout_constraintTop_toBottomOf="@+id/toastButton"
         app:srcCompat="@drawable/calmshiba" />
 
+    <Button
+        android:id="@+id/foodButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="154dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="154dp"
+        android:layout_marginBottom="33dp"
+        android:text="Giv Fuud"
+        app:layout_constraintBottom_toTopOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toastButton" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -15,12 +15,13 @@ class MainActivity : AppCompatActivity() {
         val toastText = "You Touched My Tralala!"
         val duration = Toast.LENGTH_LONG
         val toastButton: Button = findViewById(R.id.toastButton)
+        val shibaFood: Button = findViewById(R.id.foodButton)
         toastButton.setOnClickListener {
             //TODO: Add stuff here. Need to make a toast.
             shibaImage.setImageResource(R.drawable.angry_shiba)
             Toast.makeText(applicationContext, toastText, duration).show()
         }
-        shibaImage.setOnClickListener {
+        shibaFood.setOnClickListener {
             val toastText = "I forgiv fren."
             Toast.makeText(applicationContext, toastText, duration).show()
             shibaImage.setImageResource(R.drawable.calmshiba)
