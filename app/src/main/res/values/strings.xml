@@ -3,4 +3,9 @@
     <string name="greetings_textbox">Hello Paul T. Maack!</string>
     <string name="title_textview">TextView Added for AD 340</string>
     <string name="touch_button">My Tralala</string>
+    <string name="shibainu">ShibaInu</string>
+    <string name="giv_fuud">Giv Fuud</string>
+    <string name="increment">Increment</string>
+    <string name="decrement">Decrement</string>
+    <string name="reset">Reset</string>
 </resources>

@@ -8,75 +8,121 @@
 
     <TextView
         android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="19dp"
-        android:layout_marginStart="142dp"
-        android:layout_marginTop="4dp"
-        android:layout_marginEnd="143dp"
-        android:layout_marginBottom="7dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="13dp"
         android:text="@string/greetings_textbox"
-        app:layout_constraintBottom_toTopOf="@+id/toastButton"
+        app:layout_constraintBottom_toTopOf="@+id/foodButton"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+        app:layout_constraintStart_toEndOf="@+id/textView3"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView3"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="19dp"
-        android:layout_marginStart="190dp"
-        android:layout_marginEnd="191dp"
-        android:layout_marginBottom="8dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="19dp"
+        android:layout_marginBottom="12dp"
         android:text="@string/title_textview"
-        app:layout_constraintBottom_toTopOf="@+id/textView2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintBottom_toTopOf="@+id/toastButton"
+        app:layout_constraintEnd_toStartOf="@+id/textView2"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
 
     <Button
         android:id="@+id/toastButton"
         android:layout_width="wrap_content"
         android:layout_height="48dp"
-        android:layout_marginStart="158dp"
-        android:layout_marginTop="7dp"
-        android:layout_marginEnd="159dp"
-        android:layout_marginBottom="8dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="16dp"
         android:text="@string/touch_button"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.486"
+        app:layout_constraintEnd_toStartOf="@+id/foodButton"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2"
-        app:layout_constraintBottom_toTopOf="@+id/imageView"
-        />
-
-
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="wrap_content"
         android:layout_height="518dp"
-        android:layout_marginTop="87dp"
+        android:layout_marginTop="4dp"
         android:layout_marginBottom="8dp"
+        android:contentDescription="@string/shibainu"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/toastButton"
+        app:layout_constraintTop_toBottomOf="@+id/decrement"
         app:srcCompat="@drawable/calmshiba" />
 
     <Button
         android:id="@+id/foodButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="154dp"
-        android:layout_marginTop="14dp"
-        android:layout_marginEnd="154dp"
-        android:layout_marginBottom="33dp"
-        android:text="Giv Fuud"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="60dp"
+        android:text="@string/giv_fuud"
+        app:layout_constraintBottom_toTopOf="@+id/decrement"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/toastButton"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <Button
+        android:id="@+id/increment"
+        android:layout_width="125dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="22dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="46dp"
+        android:text="@string/increment"
+        app:layout_constraintBottom_toTopOf="@+id/imageView"
+        app:layout_constraintEnd_toStartOf="@+id/decrement"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toastButton"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/decrement"
+        android:layout_width="156dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginBottom="38dp"
+        android:text="@string/decrement"
+        app:layout_constraintBottom_toTopOf="@+id/imageView"
+        app:layout_constraintEnd_toStartOf="@+id/resetButton"
+        app:layout_constraintStart_toEndOf="@+id/increment"
+        app:layout_constraintTop_toBottomOf="@+id/foodButton" />
+
+    <Button
+        android:id="@+id/resetButton"
+        android:layout_width="88dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="46dp"
+        android:text="@string/reset"
+        app:layout_constraintBottom_toTopOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/decrement"
+        app:layout_constraintTop_toBottomOf="@+id/foodButton" />
+
+    <TextView
+        android:id="@+id/counter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="180dp"
+        android:layout_marginTop="27dp"
+        android:layout_marginEnd="181dp"
+        android:text="0"
         app:layout_constraintBottom_toTopOf="@+id/imageView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/toastButton" />
+        app:layout_constraintTop_toBottomOf="@+id/decrement" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
